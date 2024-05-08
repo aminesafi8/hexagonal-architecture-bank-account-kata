@@ -1,0 +1,15 @@
+package com.amine.katabankaccount.adapter.in.rest.payload;
+
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class DepositRequest {
+
+    @NotNull
+    private AmountRequest amount;
+}
